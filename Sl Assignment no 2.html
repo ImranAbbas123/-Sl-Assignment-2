@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head>
+<title>Let examlpe 1</title>
+<script>
+// Examlpe 1:
+//Let
+let i=5;
+for(let i=0;i<3;i++){
+console.log(i);
+}
+console.log(i);
+//Var
+var j=5;
+for(var j=0;j<3;j++)
+{
+console.log(j);
+}
+console.log(j);
+//const
+const a=5;
+
+console.log(a)
+
+// Examlpe 2:
+ let speak = "say Hi";
+   let t = 4;
+   if (t > 3) {
+        let talk = "say Hello instead";
+        console.log(talk);//"say Hello instead"
+    }
+	
+   console.log(talk) // talk is not defined
+   // Var
+   
+   var f = 4;
+   if (f > 3) {
+        var tal = "i am new";
+        console.log(tal);
+    }
+   console.log(tal) 
+   
+   // Examlpe 3:
+   
+   let x = 2; //Allowed
+const y=2;   // Allowed
+
+{
+  let x = 3;   // Allowed
+  const y=3;  //Allowed
+  
+}
+
+{
+  let x = 4;   // Allowed
+  const y=4;   //Allowed
+   
+}
+  
+  //Examlpe 4:
+  //let x;
+  //x=5;//incorrect
+  //const x;
+  x=5;//incorrect
+  //let x=5;//correct
+  //const x=5//correct
+  //Examlpe 5:
+  var z="hello world";
+  myFunction();
+  function myFunction()
+  {
+  console.log(" i am"+z);
+  }
+    let b="hello world";
+  myFunction();
+  function myFunction()
+  {
+  console.log(" i am"+b);
+  }
+  
+  
+</script>
+
+
+</head>
+<body>
+<h1>Difference between Let,var and Const</h1>
+<ul >
+<font size="+2">
+<li>	var declarations are globally scoped or function scoped while let and const are block scoped.
+</li>
+<li>	var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared.
+</li>
+<li>	They are all hoisted to the top of their scope but while varvariables are initialized with undefined, let and const variables are not initialized.
+	</li>
+<li>	While var and let can be declared without being initialized, const must be initialized during declaration.
+</li>
+</font>
+
+</ul>
+
+</body
+</html>>
